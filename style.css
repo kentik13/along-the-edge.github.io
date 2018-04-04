@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* параграф */
+body
+{
+    background: #333333 url(images/white-hollow-spheroids.png) repeat fixed top left;
+}
+
+#page 
+{
+    width: 960px;
+    margin: 0 auto;
+    height: 2000px;
+    position: relative;
+}
+
+.strong-red
+{
+    margin-top: 400px;
+    color: black;
+    text-align: justify;
+    font-family: Pacifico;
+    font-style: italic;    
+    font-variant: small-caps;
+}
+
+.light-blue
+{
+   font-weight: bold;
+    color: blue;  
+}
+
+.light-blue
+{
+ font-size: 18px;
+}
+
+#styles li {
+    color: black;
+    font-family: Pacifico;
+        list-style: circle inside;
+    padding: 5px;
+    border: 1px solid #fff;
+    
+}
+
+#styles li:hover{
+    background: #000;
+}
+
+#navigation {
+    height: 65px;
+    
+}
+
+#navigation ul li {
+    float: left;
+    position: relative;
+}
+
+#navigation ul li a {
+    color: #939393;
+    padding: 0 15px;
+    font-family: sans-serif;
+    line-height: 65px;
+    text-decoration: none;
+    display: block;
+    height: 65px;
+    
+}
+
+#navigation ul li a:hover {
+    background: #db0b0b;
+    text-decoration: underline;
+}
+#navigation .dropdown {
+    position: absolute;
+    top: 100%;
+    width: 150px;
+    background: yellow;
+    display: none;
+ }
+
+#navigation li:hover .dropdown {
+    display: block;
+}
+
+#navigation .dropdown li {
+    width: 100%;
+        height: 45px;
+    line-height:  height: 45px;
+}
+
+#navigation .dropdown li a {
+    height: 45px;
+}
+
+
+#header {
+    height: 204px;
+    position: relative;
+}
+
+.logo {
+ display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+        
+}
+
+.search {
+    position: absolute;
+    right: 0px;
+    padding-right: 20px;
+    
+}
+#content {padding-top: 20px}
+
+#content:before,
+#content:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+#content:after {
+    clear: both;
+}
+
+#content {
+    *zoom: 1;
+}
+
+#article {
+        width: 740px;
+   
+    padding-right: 20px;
+    float: left;
+}
+
+#article p {
+    background: red;
+}
+
+#article > p {
+   background: black;     
+}
+
+#article .combinator + p {
+    background: green;
+}
+
+#article .combinator ~ {
+    background: yellow;
+}
+
+
+#article p {
+    color: #179600;
+    font-family: fantasy;
+}
+
+#sidebar {
+    
+    width:  200px;
+    float: left;
+}
+
+#sidebar ul li {
+        color: #179600;
+    font-family: fantasy;
+}
+#fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    top: 0;
+    right: 0;
+        }
+
+.modal-body {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -200px;
+}
+
+.pseudo-class {
+    color: red;
+}
+
+.pseudo-class:focus {
+    color: yellow;
+}
+
+
+#article p:last-child
+{color: aqua;}
+
+#article p:first-child
+{color: green;}
+
+#article p:last-child
+
+
+.pseudo-element::before {
+    content: "<hr>asdfafd                     ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 10px;
+        margin-top:10px;
+}
+
+a[target="_blank"] {
+    color: blueviolet;
+}
+
+a[target~="внешняя"] {
+  color: yellow;
+}
+
+a[target] {
+
+}
+
+input[type="text"] {
+    border: 2px solid darkcyan ;
+    
+}
+.icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px; 
+ background-image: url(images/sprites.png)
+}
+
+.icon.icon-car{
+    background-position: 0 0
+}
+
+.icon.icon-car:hover{
+    background-position: 0 -40px;
+}
+
+.icon-check {
+    
+}
+
+@media print{
+    
+    body{background: #fff} 
+    
+    #navigation,.search,#sidebar {display: none;}
+    
+    #article {
+        width: 100%;
+        float: none;
+    }
+    
+    
+}
+
+@media
+(min-width:600px) and (max-width:980px)
+{
+    
+    body{background: #fff} 
+    
+    #navigation,.search,#sidebar {display: none;}
+    
+    #article {
+        width: 100%;
+        float: none;
+    }
+
+    #page {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+}
