@@ -48,6 +48,7 @@ header .banner {
 header .banner-text {
  color: #f5f5f5;
  width: 100%;
+     font:46px 'bold', MyUniqueFont;
  }
 
 section {
