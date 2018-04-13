@@ -40,7 +40,7 @@ header .banner {
  padding-bottom: 30px;
  text-align: center;
  font:46px 'bold', MyUniqueFont;
- /*font-weight: bold;*/
+ font-weight: bold;
  letter-spacing: 5px;
 
 }
