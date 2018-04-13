@@ -1,4 +1,5 @@
 @font-face {
     font-family: MyUniqueFont;
-    src: url('fonts/EDISTYS.ttf');
+    src: url(EDISTYS.ttf);
+    font-weight: bold;
 }
