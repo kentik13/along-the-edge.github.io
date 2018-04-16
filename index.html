@@ -6,9 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=stylesheet type="text/css" href="main.css">
   <link rel=stylesheet type="text/css" href="media_queries.css">
+  <!--плавный скрол -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+  <!--плавный скрол конец-->
+  
  </head>
 <body>
-  <header>
+  <header id="top">
     <video loop muted autoplay playsinline poster="video/gifback.gif">
         <source src="video/mp4/back_load.mp4" type="video/mp4">
         <source src="video/webm/back_load.webm" type="video/webm">
@@ -19,11 +33,11 @@
        </div>-->
     </div>
   </header>
-  <section>
+  <section id="menu">
   <div id="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About us</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="#">Video</a></li>
@@ -33,9 +47,21 @@
       </div>
   
   </section>
-  
+  <section id="about">
+We are new school club metal banf from Kiev,Ukraine. <br>
+ We are going to mix different styles of progressive metal like metalcore and hardcore <br> 
+ with different styles of modern bassline electronics like neurofunk and dubstep.
+  </section>
   <footer>
     <div>
+CONTACT US 
+MANAGEMENT, CONCERTS, COMMERCIAL
+
+Andrey Kuznetsov
+
++380 63 123 6666
+
+blabla@gmail.com
       &copy; Copyright Along The Edge
     </div>
   </footer>

@@ -51,13 +51,25 @@ header .banner-text {
      font:46px 'bold', MyUniqueFont;
  }
 
-section {
+#menu {
  background: #2B2B2B;
  /*padding-top: 196px;*/
  /*padding-bottom: 66px;*/
  overflow: hidden;
  color:#fff;
  /*text-align: center;*/
+}
+
+#about {
+ background: gray;
+ padding-top: 50px;
+ padding-bottom: 1166px;
+ overflow: hidden;
+ color:black;
+text-align: center;
+font:46px 'bold';
+    
+
 }
 
 footer {
